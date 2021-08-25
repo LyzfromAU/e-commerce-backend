@@ -1,0 +1,1 @@
+web: gunicorn mini4wd_backend.wsgi --log-file -
