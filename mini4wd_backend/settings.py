@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-((d(=6a9wq$rfgi&j08wle)nfl_k15i&8f7-73&#if5xjv^#zo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['lyz-mini4wd-api.herokuapp.com/', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
