@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-((d(=6a9wq$rfgi&j08wle)nfl_k15i&8f7-73&#if5xjv^#zo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'api',
     'corsheaders',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -135,3 +136,11 @@ AUTH_USER_MODEL = 'api.User'
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
+
+AWS_ACCESS_KEY_ID = 'AKIA2UUKUUPWDDOT2PHO'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'amemini4wd'
+
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
